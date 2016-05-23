@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="d3634cb4-f454-4825-9341-0535c890623b" name="UMLUseCaseDiagram1" linkedPackageId="818e8988-083e-4eb3-9c3c-d2c2d36887a8" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="3713d1be-008b-46af-a302-e3f3a83f4cd1">
+      <elementDefinition Id="22f13c60-7308-4df9-8f57-60f6d29b0acf" />
+      <body>Привидение</body>
+      <annotatedElements>
+        <actorMoniker Id="3989f3aa-09be-4860-a053-696a2279bf5f" LastKnownName="Ghost" />
+      </annotatedElements>
+    </comment>
+    <comment Id="c8757e55-feaa-4f47-8da1-6c46adc5e8c0">
+      <elementDefinition Id="4a87ec2b-ef29-48f5-971b-7401765d2fb0" />
+      <body>Pac-Man</body>
+      <annotatedElements>
+        <actorMoniker Id="bca30d7a-e689-4caf-910d-62c1be678ccf" LastKnownName="Pac-Man" />
+      </annotatedElements>
+    </comment>
+    <comment Id="b06d5ca9-401f-40d1-af3e-f2e990d639b6">
+      <elementDefinition Id="e263c429-8e75-4cc7-80a7-cd4f31c76eda" />
+      <body>Если Pac-Man съедает большой зелёный шарик</body>
+      <annotatedElements>
+        <useCaseMoniker Id="045cd164-f224-4b21-8327-a8b30dd620d0" LastKnownName="Получает бонусы" />
+        <useCaseMoniker Id="1822d243-f8f3-4856-b488-2fe7b5c8e6c4" LastKnownName="Засыпает" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="dd883bd6-f1bd-41e5-aee0-eebccf6fa032">
+      <profileInstance Id="6660d53f-9886-4a74-8209-c0f0ff8c1428" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="8bb8ccb4-30bd-4d74-b467-9d7e9e386f7b">
+      <profileInstance Id="e8ced2d3-1906-4b62-b9da-d973dcddb187" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="bca30d7a-e689-4caf-910d-62c1be678ccf" name="Pac-Man" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5dd7043a-be13-4c72-ac73-356b9b4096aa" />
+        <targetEnds>
+          <association Id="355504db-65f4-4f85-8b5b-b1f5e1cf43f0" isDerived="false" sourceEndRoleName="Pac-Man" targetEndRoleName="Получает бонусы" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="045cd164-f224-4b21-8327-a8b30dd620d0" LastKnownName="Получает бонусы" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bd75318-d5c8-404a-92f1-c9cb073fcfbb" name="Pac-Man" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d7c7dd08-c994-43b9-8abe-2fe0cec0c5ff" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f036fa3-fd3c-412d-b240-779d3e434a70" name="Получает бонусы" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63957087-712b-41fc-870a-262147182ab1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="437ad453-680a-43f0-b060-b71c07432d62" />
+          </association>
+          <association Id="48612a03-bf61-4a2e-9b03-ea2b689e0b39" isDerived="false" sourceEndRoleName="Pac-Man" targetEndRoleName="Генерируется на игровом поле" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="132e5fba-4ea1-4e84-baa5-08de29f822ee" LastKnownName="Генерируется на игровом поле" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a6012a83-af65-4b42-b908-a36a8c785599" name="Pac-Man" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8dbea2b-4334-49fc-98fa-946662b8889a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="20218af6-a033-4f6e-8927-17137257137c" name="Генерируется на игровом поле" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6b75af48-e2f1-4c20-bdda-3dddcab29a88" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c9da24b7-89ab-4c16-ac7e-b854ff3b65f2" />
+          </association>
+          <association Id="556e839c-3f9d-404e-8bea-f499a98349a7" isDerived="false" sourceEndRoleName="Pac-Man" targetEndRoleName="Перемещается" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1bea431-526f-4419-be63-42ae22a2d48e" LastKnownName="Перемещается по игровому полю" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4c6323ef-5213-4ba4-a162-bf75255af151" name="Pac-Man" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b6996c35-3a6a-43f1-8209-f822f654c182" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="983106d4-cc5a-46b3-9139-d965f0b19cfc" name="Перемещается" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="506b21e2-5283-4bec-a767-d0592f482165" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9aa73386-9ac5-4b49-b32d-b9fb60088e00" />
+          </association>
+          <association Id="6c858d48-d7cd-45bb-b584-9dce9f1b6eee" isDerived="false" sourceEndRoleName="Pac-Man" targetEndRoleName="Ест шарики" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5b4c387b-6c19-4a05-895e-15d151679c4c" LastKnownName="Ест шарики" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc7e44b8-97e2-469e-95e0-c7aa48f299d9" name="Pac-Man" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8d127c50-8448-45b8-ba6b-c777d53dca3e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f09514d-7d08-4d71-949e-71cfb1f5a5b3" name="Ест шарики" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5c45f63d-b867-4a8b-bb54-21ec7b46ca75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="860ffc26-6b59-4fce-a0cc-694e04cff01b" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="3989f3aa-09be-4860-a053-696a2279bf5f" name="Ghost" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="146920c3-171a-4bc7-bc60-caedc114dfd4" />
+        <targetEnds>
+          <association Id="be6649f4-78b8-4b45-8783-0a103246e789" isDerived="false" sourceEndRoleName="Ghost" targetEndRoleName="Ест Pac-Man'а" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="45e9cb05-4199-4dc3-ab0a-43679c780291" LastKnownName="Ест Pac-Man'а" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cb62f9a5-faea-4f7f-b35b-3a0e53a4f37f" name="Ghost" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b44d5f53-dcad-4fa4-9218-f5955710aa63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="af7ec19c-fd7b-4493-8ff8-377a7f402b67" name="Ест Pac-Man'а" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4cc2cbd8-42b3-4d01-bce8-e7c01bb9ac5c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b4c927cb-d678-43b6-ab0e-d6aee10b7187" />
+          </association>
+          <association Id="ecfeb126-ee38-47bf-b8a5-fc22af092611" isDerived="false" sourceEndRoleName="Ghost" targetEndRoleName="Перемещается" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c1bea431-526f-4419-be63-42ae22a2d48e" LastKnownName="Перемещается по игровому полю" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f162a0c4-7cf7-47f5-8a99-a04c7112d166" name="Ghost" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b7395742-2e94-4d72-8d49-b34c3c7f55ce" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f76d9d2f-cb89-4134-b29c-99cca2d02023" name="Перемещается" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ba71f11-fbd4-4d4b-8d3a-a1c9b8513e91" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a4a30ea-7dc2-44c9-ac5f-588f1a9d635e" />
+          </association>
+          <association Id="103502e8-b04e-4bd1-b405-4f3355817226" isDerived="false" sourceEndRoleName="Ghost" targetEndRoleName="Генерируется на игровом поле" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="132e5fba-4ea1-4e84-baa5-08de29f822ee" LastKnownName="Генерируется на игровом поле" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85865ad6-f290-4c9d-add1-43e890229d00" name="Ghost" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6b36edd5-e41d-4682-9099-a64bafd3bb37" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="703d44ef-eccd-4a93-b14d-d62e23491b48" name="Генерируется на игровом поле" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb75f953-cc14-422f-8989-1af53045000e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0e36eb76-ae45-4353-a1d8-521c3f05d5a5" />
+          </association>
+          <association Id="b2182568-96a1-4cf0-8f25-91fc38fc3b82" isDerived="false" sourceEndRoleName="Ghost" targetEndRoleName="Засыпает" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1822d243-f8f3-4856-b488-2fe7b5c8e6c4" LastKnownName="Засыпает" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9179ff10-95c8-4494-b9f6-5b6113097f95" name="Ghost" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="17a3ad24-0dd2-442b-8dbd-aae97b5a91d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4d353845-40aa-4082-a298-f10aad27b5dc" name="Засыпает" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f0b460c3-1271-4d26-865a-14f3e65df676" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fd315faf-7b39-46b2-966a-1e6629277cd3" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5b4c387b-6c19-4a05-895e-15d151679c4c" name="Ест шарики" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3ce5208-3789-49dc-8f78-ccbabb7d5e9b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="045cd164-f224-4b21-8327-a8b30dd620d0" name="Получает бонусы" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="af4c214e-7ae8-40ac-87eb-be40860985c8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c1bea431-526f-4419-be63-42ae22a2d48e" name="Перемещается по игровому полю" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="007ddcd7-5764-48d4-9122-584b8ea15ac3" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1822d243-f8f3-4856-b488-2fe7b5c8e6c4" name="Засыпает" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9954a616-3e48-4906-8980-df918635b9de" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="45e9cb05-4199-4dc3-ab0a-43679c780291" name="Ест Pac-Man'а" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="65c6057e-d726-404b-b741-001eb32d295c" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="132e5fba-4ea1-4e84-baa5-08de29f822ee" name="Генерируется на игровом поле" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6eac0db-aa40-488c-ab5e-2a8fa37de1e9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="818e8988-083e-4eb3-9c3c-d2c2d36887a8" name="ModelingProject1">
+    <elementDefinition Id="a46c5e74-2167-4b4a-984b-9533b6108139" />
+  </package>
+</useCaseModelRoot>

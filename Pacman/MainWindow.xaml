@@ -1,0 +1,8 @@
+﻿<Window x:Class="Pacman.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Pac-Man" Height="700" Width="650" Background="Gray" KeyDown="Window_KeyDown" Icon="pack://application:,,,/Resources/pacman.ico" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow">
+    <Grid Name="_Grid" Background="Black" Width="630" Height="630" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+        <Label Name="_Score" Content="Score: 0" HorizontalAlignment="Left" Margin="5,-32,0,0" VerticalAlignment="Top" Width="168" FontSize="20" Height="28" FontWeight="Bold" FontFamily="Consolas" Foreground="#FFFDF200"/>
+    </Grid>
+</Window>
